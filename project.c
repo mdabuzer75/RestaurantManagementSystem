@@ -365,7 +365,7 @@ void admin()
                     break;
 
                 printf("\t\t\t\t\t\t\tEnter food item name: ");
-                scanf("%s",name);
+                scanf(" %[^\n]s", &name);
                 printf("\t\t\t\t\t\t\tEnter price: ");
                 scanf("%f",&price);
                 heada = createadmin(heada, num, name, price);
